@@ -15,7 +15,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body-relative">
 
   <header>
     <img src="./assets/images/logo-full.svg" alt="logo"/>
@@ -33,7 +33,7 @@
           <input type="file" class="upload-input" id="fileUpload"/>
           
           <!-- Clickable Overlay -->
-          <label for="fileUpload" class="upload-div absolute">
+          <label for="fileUpload" class="upload-div">
             <img src="./assets/images/icon-upload.svg" alt="upload"/>
             <p>Drag and drop or click to upload</p>
           </label>
@@ -61,6 +61,9 @@
       <button type="submit" id="submitBtn">Generate My Ticket</button>
     </form>
   </main>
+
+  <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="pattern-squiggly-line" class="desktop absolute"/>
+  <img src="./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="pattern-squiggly-line" class="mobile absolute"/>
   <!-- Form ends -->
 
   <!-- Generated tickets starts -->
