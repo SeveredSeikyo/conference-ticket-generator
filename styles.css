@@ -1,0 +1,169 @@
+@import url("./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf");
+@import url("./assets/fonts/static/Inconsolata-Bold.ttf");
+@import url("./assets/fonts/static/Inconsolata-ExtraBold.ttf");
+@import url("./assets/fonts/static/Inconsolata-Medium.ttf");
+@import url("./assets/fonts/static/Inconsolata-Regular.ttf");
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata-Bold';
+    src: url("./assets/fonts/static/Inconsolata-Bold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata-ExtraBold';
+    src: url("./assets/fonts/static/Inconsolata-ExtraBold.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata-Medium';
+    src: url("./assets/fonts/static/Inconsolata-Medium.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata-Regular';
+    src: url("./assets/fonts/static/Inconsolata-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.upload-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 250px;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+main {
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+}
+
+/* Form Headings */
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    /* border-color: #007bff; */
+    outline: none;
+}
+
+/* Upload Section */
+.relative {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    background: #fafafa;
+}
+
+.upload-input {
+    display: none;
+}
+
+.upload-div {
+    text-align: center;
+    color: #333;
+}
+
+.upload-div img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+body{
+    background-image: url("./assets/images/background-desktop.png");
+}
+
+@media (max-width: 481px){
+    body{
+        background-image: url("./assets/images/background-mobile.png");
+    }
+}
+
+@media (min-width: 481px) and (max-width: 769px){
+    body{
+        background-image: url("./assets/images/background-tablet.png");
+    }
+}
